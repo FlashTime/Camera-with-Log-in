@@ -1,0 +1,59 @@
+#
+# generated on 2016/05/22 06:56:29
+#
+# --table-start--
+dataClass=com.example.danijel.execomhackathon.db.User
+tableName=user
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=email
+# --field-end--
+# --field-start--
+fieldName=password
+# --field-end--
+# --field-start--
+fieldName=is
+# --field-end--
+# --table-fields-end--
+# --table-end--
+# --table-start--
+dataClass=com.example.danijel.execomhackathon.db.TipMonumenta
+tableName=tip
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=nazivtipa
+# --field-end--
+# --table-fields-end--
+# --table-end--
+# --table-start--
+dataClass=com.example.danijel.execomhackathon.db.Monuments
+tableName=monument
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=naziv
+# --field-end--
+# --field-start--
+fieldName=image
+# --field-end--
+# --field-start--
+fieldName=description
+# --field-end--
+# --table-fields-end--
+# --table-end--
+# --table-start--
+#################################
