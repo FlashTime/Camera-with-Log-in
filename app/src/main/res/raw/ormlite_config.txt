@@ -53,6 +53,12 @@ fieldName=image
 # --field-start--
 fieldName=description
 # --field-end--
+# --field-start--
+fieldName=user
+# --field-end--
+# --field-start--
+fieldName=tip
+# --field-end--
 # --table-fields-end--
 # --table-end--
 # --table-start--

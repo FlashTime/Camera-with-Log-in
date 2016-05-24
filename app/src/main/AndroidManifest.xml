@@ -42,12 +42,19 @@
         <activity
             android:name=".MonumentActivity"
             android:label="@string/title_activity_monument"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".UlogovanActivity" >
+            android:screenOrientation="portrait"
+            android:parentActivityName=".UlogovanActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".UlogovanActivity" />
         </activity>
+        <activity
+            android:name=".OnlyMonumentActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".UlogovanActivity"
+            android:label="@string/title_activity_only_monument"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -28,7 +28,6 @@ import java.util.List;
 public class UlogovanActivity extends AppCompatActivity {
 
     private BottomBar mBottomBar;
-    private TextView mMessageView;
 
     private Camera2BasicFragment add;
     private AllMonumentsFragment all;
@@ -42,13 +41,10 @@ public class UlogovanActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        mMessageView = (TextView) findViewById(R.id.messageView);
-
         mBottomBar = BottomBar.attach(this, savedInstanceState);
         mBottomBar.setItemsFromMenu(R.menu.bottombar_menu, new OnMenuTabClickListener() {
             @Override
             public void onMenuTabSelected(@IdRes int menuItemId) {
-                mMessageView.setText(getMessage(menuItemId, false));
                 final FragmentManager fragmentManager = getSupportFragmentManager();
                 switch (menuItemId) {
                     case R.id.bb_menu_search:

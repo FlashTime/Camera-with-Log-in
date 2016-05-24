@@ -133,8 +133,11 @@
                 android:layout_height="75dp"
                 android:id="@+id/button_register"
                 android:layout_gravity="center_horizontal"
-                android:background="@drawable/arrow"
-                android:layout_marginTop="50dp"/>
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="50dp"
+                android:text="Create"
+                android:textStyle="bold"
+                android:textColor="@color/abc_primary_text_material_dark" />
 
         </LinearLayout>
     </LinearLayout>

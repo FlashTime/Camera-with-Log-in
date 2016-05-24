@@ -61,12 +61,8 @@ public class MonumentActivity extends AppCompatActivity {
         Log.d("juhu",path);
         Log.d("jasu",imgFile.getAbsolutePath());
         Bitmap myBitmap = BitmapFactory.decodeFile(path);
-        Bitmap newBitmap = myBitmap;
-        if(myBitmap.getWidth()>4000 || myBitmap.getHeight()>4000)
-            newBitmap = Bitmap.createBitmap(myBitmap, 0,0,3000, 3000);
-        else newBitmap = myBitmap;
         myImage = (ImageView) findViewById(R.id.imgMonument);
-        myImage.setImageBitmap(newBitmap);
+        myImage.setImageBitmap(myBitmap);
        // myImage.setImageResource(R.drawable.arrow);
 
 
@@ -95,6 +91,7 @@ public class MonumentActivity extends AppCompatActivity {
                     List<Monuments> mon;
 
                     users = userDao.queryForEq("is", 1);
+
                     tip = tipDao.queryForEq("nazivtipa", type.getText().toString());
                     int u=0;
                     if(tip.isEmpty()){
@@ -102,12 +99,9 @@ public class MonumentActivity extends AppCompatActivity {
                     }else {
                         u = tip.get(0).getId();
                     }
-
-                    monumentsDao.create(new Monuments(name.getText().toString(),path,description.getText().toString(),u,type.getText().toString()));
-
-                    Log.d("user", userDao.queryForAll()+"");
-                    Log.d("user", tipDao.queryForAll()+"");
-                    Log.d("user", monumentsDao.queryForAll()+"");
+                    String user= users.get(0).getEmail();
+                    Log.i("srenje",user);
+                    monumentsDao.create(new Monuments(name.getText().toString(),path,description.getText().toString(),user,type.getText().toString()));
 
                     OpenHelperManager.releaseHelper();
                     Intent i = new Intent(getApplicationContext(), UlogovanActivity.class);

@@ -45,4 +45,7 @@
     <string name="name_monument">Name</string>
     <string name="type_monument">Type</string>
     <string name="action_done">Done</string>
+    <string name="title_activity_only_monument">OnlyMonumentActivity</string>
+    <string name="search_title">Search</string>
+    <string name="search_type">Search type</string>
 </resources>

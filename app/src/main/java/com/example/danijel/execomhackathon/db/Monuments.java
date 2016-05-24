@@ -20,7 +20,7 @@ public class Monuments {
     @DatabaseField
     String description;
     @DatabaseField
-    int user;
+    String user;
     @DatabaseField
     String tip;
 
@@ -37,7 +37,7 @@ public class Monuments {
     }
 
     public Monuments(){}
-    public Monuments(String naziv, String image, String description, int user, String tip) {
+    public Monuments(String naziv, String image, String description, String user, String tip) {
         this.naziv = naziv;
         this.image = image;
         this.description = description;
@@ -61,7 +61,7 @@ public class Monuments {
         return description;
     }
 
-    public int getUser() {
+    public String getUser() {
         return user;
     }
 
